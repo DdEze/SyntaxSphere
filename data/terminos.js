@@ -3,7 +3,25 @@ export const terminos = {
     titulo: 'Algoritmo',
     definicion: 'Conjunto finito de instrucciones para resolver un problema.',
     descripcion: 'Un algoritmo es una secuencia de pasos lógicos y ordenados que permiten resolver un problema específico o realizar una tarea determinada.',
-    relacionados: ['variable', 'compilador']
+    relacionados: ['variable', 'lenguaje%20de%20programaci%C3%B3n', 'compilador']
+  },
+  'variable': {
+    titulo: 'Variable',
+    definicion: 'Espacio en memoria para almacenar datos.',
+    descripcion: 'Una variable es un contenedor para almacenar información que puede cambiar durante la ejecución del programa.',
+    relacionados: ['algoritmo', 'lenguaje%20de%20programaci%C3%B3n']
+  },
+  'lenguaje%20de%20programaci%C3%B3n':{
+    titulo: 'Lenguaje de Programación',
+    definicion: 'Un lenguaje de programación es un conjunto de reglas y sintaxis que permite a los programadores dar instrucciones a una computadora para realizar tareas específicas.',
+    descripcion: 'Un lenguaje de programación es un sistema estructurado compuesto por reglas gramaticales, símbolos y sintaxis que permite a los desarrolladores escribir instrucciones comprensibles para una computadora, actuando como un intermediario entre el pensamiento humano y el lenguaje binario que las máquinas pueden entender.',
+    relacionados: ['algoritmo', 'variable', 'compilador']
+  },
+  'frontend': {
+  titulo: 'Frontend',
+  definicion: 'Parte de una aplicación con la que interactúa el usuario.',
+  descripcion: 'El frontend es la interfaz visual de una aplicación web o móvil, donde se muestra la información y se captura la interacción del usuario.',
+  relacionados: ['html', 'css', 'javascript']
   },
   'api': {
     titulo: 'API',
@@ -11,19 +29,13 @@ export const terminos = {
     descripcion: 'Una API (Application Programming Interface) es un conjunto de reglas y protocolos que permite a diferentes programas comunicarse entre sí.',
     relacionados: ['rest', 'json']
   },
-  'frontend': {
-    titulo: 'Frontend',
-    definicion: 'Parte de una aplicación con la que interactúa el usuario.',
-    descripcion: 'El frontend es la interfaz visual de una aplicación web o móvil, donde se muestra la información y se captura la interacción del usuario.',
-    relacionados: ['html', 'css', 'javascript']
-  },
   'backend': {
     titulo: 'Backend',
     definicion: 'Parte del software que gestiona la lógica del servidor.',
     descripcion: 'El backend es la parte de una aplicación que se ejecuta en el servidor, gestiona bases de datos, autenticación y lógica del negocio.',
-    relacionados: ['api', 'base-de-datos']
+    relacionados: ['api', 'base%20de%20datos']
   },
-  'base-de-datos': {
+  'base%20de%20datos': {
     titulo: 'Base de datos',
     definicion: 'Sistema organizado para almacenar, gestionar y recuperar datos.',
     descripcion: 'Una base de datos es una colección de datos organizados que pueden ser accedidos, gestionados y actualizados fácilmente.',
@@ -101,7 +113,7 @@ export const terminos = {
     descripcion: 'JSON (JavaScript Object Notation) es un formato de texto fácil de leer y escribir para representar datos estructurados.',
     relacionados: ['api', 'javascript']
   },
-  'machine-learning': {
+  'machine%20learning': {
     titulo: 'Machine Learning',
     definicion: 'Rama de la inteligencia artificial que permite a los sistemas aprender de datos.',
     descripcion: 'Machine Learning utiliza algoritmos para que los computadores mejoren su rendimiento a través de la experiencia.',
@@ -113,7 +125,7 @@ export const terminos = {
     descripcion: 'REST (Representational State Transfer) define un conjunto de restricciones para crear APIs que sean escalables y fáciles de usar.',
     relacionados: ['api', 'http']
   },
-  'sistema-operativo': {
+  'sistema%20operativo': {
     titulo: 'Sistema Operativo',
     definicion: 'Software que gestiona hardware y recursos del sistema.',
     descripcion: 'Un sistema operativo administra procesos, memoria, dispositivos y proporciona una interfaz para el usuario.',
@@ -136,12 +148,6 @@ export const terminos = {
     definicion: 'Percepción y respuesta del usuario al usar un producto o sistema.',
     descripcion: 'UX considera factores como usabilidad, accesibilidad y satisfacción del usuario para mejorar el diseño.',
     relacionados: ['ui']
-  },
-  'variable': {
-    titulo: 'Variable',
-    definicion: 'Espacio en memoria para almacenar datos.',
-    descripcion: 'Una variable es un contenedor para almacenar información que puede cambiar durante la ejecución del programa.',
-    relacionados: ['algoritmo', 'lenguaje']
   },
   'version': {
     titulo: 'Versión',

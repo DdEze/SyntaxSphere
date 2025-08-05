@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header>
+    <header className="main-header">
       <div>
         <Link href="/">SyntaxSphere</Link>
       </div>

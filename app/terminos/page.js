@@ -1,9 +1,12 @@
 'use client';
 
 import Link from 'next/link';
+import Layout from '@/components/Layout';
+import '../../styles/global.css';
 
 const terminos = [
   'Algoritmo',
+  'Lenguaje de Programación',
   'API',
   'Backend',
   'Base de datos',
@@ -32,20 +35,19 @@ const terminos = [
 
 export default function TerminosPage() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Glosario de Términos Informáticos</h1>
-      <ul className="list-disc pl-5 space-y-2">
+    <Layout>
+      <h1>Glosario de Términos Informáticos</h1>
+      <ul>
         {terminos.map((termino) => (
           <li key={termino}>
             <Link
               href={`/terminos/${encodeURIComponent(termino.toLowerCase())}`}
-              className="text-blue-600 hover:underline"
             >
               {termino}
             </Link>
           </li>
         ))}
       </ul>
-    </main>
+    </Layout>
   );
 }

@@ -1,6 +1,8 @@
 import { notFound } from 'next/navigation';
 import {terminos} from '../../../data/terminos';
 import Link from 'next/link';
+import Layout from '@/components/Layout';
+import '../../../styles/global.css'
 
 export default async function TerminoPage({ params }) {
   const { slug } = params;
@@ -9,7 +11,7 @@ export default async function TerminoPage({ params }) {
   if (!termino) return notFound();
 
   return (
-    <main>
+    <Layout>
       <h1>{termino.titulo}</h1>
       <p>{termino.definicion}</p>
       <p>{termino.descripcion}</p>
@@ -27,6 +29,6 @@ export default async function TerminoPage({ params }) {
           </ul>
         </>
       )}
-    </main>
+    </Layout>
   );
 }
