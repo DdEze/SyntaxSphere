@@ -7,7 +7,6 @@ const subcategorias = [
   { slug: 'estructura-control', titulo: 'Estructura de Control' },  
   { slug: 'estructura-datos', titulo: 'Estructura de Datos' },
   { slug: 'funciones', titulo: 'Funciones y Modularidad' },
-  { slug: 'modularidad', titulo: 'Modularidad' },
   { slug: 'orientada-objetos', titulo: 'Programación Orientada a Objetos (POO)' },
   { slug: 'depuración-pruebas', titulo: 'Depuración y Pruebas' },
   { slug: 'Otros-temas', titulo: 'Otros temas útiles' },
