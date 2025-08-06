@@ -5,7 +5,8 @@ import Layout from '@/components/Layout';
 import '../../../styles/global.css'
 
 export default async function TerminoPage({ params }) {
-  const { slug } = params;
+  const resolvedParams = await params;
+  const { slug } = resolvedParams;
   const termino = terminos[slug];
 
   if (!termino) return notFound();
