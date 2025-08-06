@@ -4,8 +4,8 @@ import '../../styles/global.css';
 
 const subcategorias = [
   { slug: 'variables', titulo: 'Variables y Tipo de Datos' },
+  { slug: 'estructura-control', titulo: 'Estructura de Control' },  
   { slug: 'estructura-datos', titulo: 'Estructura de Datos' },
-  { slug: 'estructura-control', titulo: 'Estructura de Control' },
   { slug: 'funciones', titulo: 'Funciones y Modularidad' },
   { slug: 'modularidad', titulo: 'Modularidad' },
   { slug: 'orientada-objetos', titulo: 'Programación Orientada a Objetos (POO)' },
