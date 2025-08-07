@@ -29,15 +29,15 @@ export default function FuncionesPage(){
 
             <pre>
                 <code>{`
-                // Función
-                function sumar(a, b) {
-                return a + b;
-                }
+// Función
+function sumar(a, b) {
+    return a + b;
+}
 
-                // Proceso
-                function mostrarResultado(resultado) {
-                console.log("Resultado:", resultado);
-                }
+// Proceso
+function mostrarResultado(resultado) {
+    console.log("Resultado:", resultado);
+}
                 `}</code>
             </pre>
             <h2>Funciones Puras vs Impuras</h2>
@@ -48,54 +48,57 @@ export default function FuncionesPage(){
 
             <pre>
                 <code>{`
-                // Función pura
-                function cuadrado(n) {
-                return n * n;
-                }
+// Función pura
+function cuadrado(n) {
+    return n * n;
+}
 
-                // Función impura
-                let contador = 0;
-                function incrementar() {
-                contador++;
-                }
+// Función impura
+let contador = 0;
+function incrementar() {
+    contador++;
+}
                 `}</code>
             </pre>
             <h2>Funciones de Orden Superior</h2>
             <p>Son funciones que reciben otras funciones como parámetros o devuelven una función como resultado.</p>
 
             <pre>
-                <code>{`function operar(a, b, operacion) {
-                return operacion(a, b);
-                }
+                <code>{`
+function operar(a, b, operacion) {
+    return operacion(a, b);
+}
 
-                console.log(operar(2, 3, (x, y) => x + y)); // 5
+console.log(operar(2, 3, (x, y) => x + y)); // 5
                 `}</code>
             </pre>
             <h2>Closures</h2>
             <p>Un closure es una función que recuerda el ámbito en el que fue creada, incluso si se ejecuta fuera de ese ámbito.</p>
 
             <pre>
-                <code>{`function contador() {
-                let cuenta = 0;
-                return function () {
-                    cuenta++;
-                    return cuenta;
-                };
-                }
+                <code>{`
+function contador() {
+    let cuenta = 0;
+    return function () {
+        cuenta++;
+        return cuenta;
+    };
+}
 
-                const incrementar = contador();
-                console.log(incrementar()); // 1
-                console.log(incrementar()); // 2
+const incrementar = contador();
+console.log(incrementar()); // 1
+console.log(incrementar()); // 2
                 `}</code>
             </pre>
             <h2>Recursividad</h2>
             <p>Es cuando una función se llama a sí misma para resolver un problema.</p>
 
             <pre>
-                <code>{`function factorial(n) {
-                if (n === 0) return 1;
-                return n * factorial(n - 1);
-                }
+                <code>{`
+function factorial(n) {
+    if (n === 0) return 1;
+        return n * factorial(n - 1);
+}
                 `}</code>
             </pre>
             <h2>Módulos / Imports / Exports</h2>
@@ -103,14 +106,14 @@ export default function FuncionesPage(){
 
             <pre>
                 <code>{`
-                // archivo operaciones.js
-                export function sumar(a, b) {
-                return a + b;
-                }
+// archivo operaciones.js
+export function sumar(a, b) {
+    return a + b;
+}
 
-                // archivo principal.js
-                import { sumar } from './operaciones.js';
-                console.log(sumar(2, 3)); // 5
+// archivo principal.js
+import { sumar } from './operaciones.js';
+console.log(sumar(2, 3)); // 5
                 `}</code>
             </pre>
             <Link href="/programacion">← Volver a conceptos de programación</Link>

@@ -25,17 +25,17 @@ export default function HtmlPage() {
       <h2 id="estructura">Estructura Básica de un Documento HTML</h2>
       <pre>
         {`
-        <!DOCTYPE html>
-        <html>
-          <head>
-              <meta charset="UTF-8">
-              <title>Mi primera página</title>
-          </head>
-          <body>
-              <h1>Hola Mundo</h1>
-              <p>Este es un párrafo.</p>
-          </body>
-        </html>
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <title>Mi primera página</title>
+  </head>
+  <body>
+      <h1>Hola Mundo</h1>
+      <p>Este es un párrafo.</p>
+  </body>
+</html>
           `}
       </pre>
 

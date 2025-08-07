@@ -15,18 +15,20 @@ export default function POOPage() {
         Las clases son plantillas que definen las propiedades y métodos de un tipo de objeto. Los objetos son instancias de estas clases.
       </p>
       <pre><code>
-        {`class Persona {
-        constructor(nombre) {
-            this.nombre = nombre;
-        }
+        {`
+class Persona {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
 
-        saludar() {
-            console.log(\`Hola, soy \${this.nombre}\`);
-        }
-        }
+  saludar() {
+    console.log(\`Hola, soy \${this.nombre}\`);
+  }
+}
 
-        const p = new Persona("Ana");
-        p.saludar(); // Hola, soy Ana`}
+const p = new Persona("Ana");
+p.saludar(); // Hola, soy Ana
+         `}
       </code></pre>
 
       <h2>Encapsulamiento</h2>
@@ -39,20 +41,30 @@ export default function POOPage() {
         Permite que una clase (subclase) herede atributos y métodos de otra clase (superclase), promoviendo la reutilización de código.
       </p>
       <pre><code className="language-js">
-        {`class Animal {
-        hablar() {
-            console.log("Hace un sonido");
-        }
-        }
+        {`
+class Animal {
+  hablar() {
+      console.log("Hace un sonido");
+  }
+}
 
-        class Perro extends Animal {
-        hablar() {
-            console.log("Guau!");
-        }
-        }
+class Perro extends Animal {
+  hablar() {
+      console.log("Guau!");
+  }
+}
 
-        const dog = new Perro();
-        dog.hablar(); // Guau!`}
+class Gato extends Animal {
+  hablar() {
+      console.log("Miau!");
+  }
+}
+
+const dog = new Perro();
+const cat = new Gato();
+dog.hablar(); // Guau!
+cat.hablar(); // Miau!
+        `}
       </code></pre>
 
       <h2>Herencia Múltiple</h2>

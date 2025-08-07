@@ -14,13 +14,15 @@ export default function EstructuraControlPage() {
       <p>Permiten ejecutar bloques de código dependiendo del cumplimiento de ciertas condiciones.</p>
       <pre>
         <code>
-          {`let edad = 18;
+          {`
+let edad = 18;
 
-          if (edad >= 18) {
-            console.log("Eres mayor de edad");
-          } else {
-            console.log("Eres menor de edad");
-          }`}
+if (edad >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+          `}
         </code>
       </pre>
 
@@ -28,18 +30,20 @@ export default function EstructuraControlPage() {
       <p>Útil para comparar una variable contra múltiples valores posibles.</p>
       <pre>
         <code>
-          {`let dia = "lunes";
+          {`
+let dia = "lunes";
 
-          switch (dia) {
-            case "lunes":
-              console.log("Inicio de semana");
-              break;
-            case "viernes":
-              console.log("Fin de semana cerca");
-              break;
-            default:
-              console.log("Día común");
-          }`}
+switch (dia) {
+  case "lunes":
+    console.log("Inicio de semana");
+    break;
+  case "viernes":
+    console.log("Fin de semana cerca");
+    break;
+  default:
+    console.log("Día común");
+}
+          `}
         </code>
       </pre>
 
@@ -49,31 +53,37 @@ export default function EstructuraControlPage() {
       <h3>For</h3>
       <pre>
         <code>
-{`for (let i = 0; i < 5; i++) {
+          {`
+for (let i = 0; i < 5; i++) {
   console.log("Iteración " + i);
-}`}
+}
+          `}
         </code>
       </pre>
 
       <h3>While</h3>
       <pre>
         <code>
-          {`let i = 0;
-          while (i < 5) {
-            console.log("Iteración " + i);
-            i++;
-          }`}
+          {`
+let i = 0;
+while (i < 5) {
+  console.log("Iteración " + i);
+  i++;
+}
+          `}
         </code>
       </pre>
 
       <h3>Do...While</h3>
       <pre>
         <code>
-          {`let i = 0;
-          do {
-            console.log("Iteración " + i);
-            i++;
-          } while (i < 5);`}
+          {`
+let i = 0;
+do {
+  console.log("Iteración " + i);
+  i++;
+} while (i < 5);
+           `}
         </code>
       </pre>
 
@@ -82,11 +92,13 @@ export default function EstructuraControlPage() {
 
       <pre>
         <code>
-          {`for (let i = 0; i < 5; i++) {
-            if (i === 2) continue;
-            if (i === 4) break;
-            console.log(i);
-          }`}
+          {`
+for (let i = 0; i < 5; i++) {
+  if (i === 2) continue;
+  if (i === 4) break;
+  console.log(i);
+}
+          `}
         </code>
       </pre>
 

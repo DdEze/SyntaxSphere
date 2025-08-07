@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Layout from '@/components/Layout';
 import '@/styles/global.css';
 
@@ -24,13 +25,15 @@ export default function ExcepcionesPage() {
         </p>
 
         <pre>
-            {`try {
-            // Código que puede lanzar una excepción
-            } catch (error) {
-            // Manejo de la excepción
-            } finally {
-            // Código que se ejecuta siempre, ocurra o no la excepción
-            }`}
+            {`
+try {
+  // Código que puede lanzar una excepción
+}catch (error) {
+  // Manejo de la excepción
+}finally {
+  // Código que se ejecuta siempre, ocurra o no la excepción
+}
+            `}
         </pre>
 
         <h2>Modelos de Ejecución</h2>
@@ -61,6 +64,7 @@ export default function ExcepcionesPage() {
           programas manejen fallos de manera controlada y segura. Elegir el modelo adecuado depende del lenguaje y del
           tipo de problema que se esté resolviendo.
         </p>
+        <Link href="/programacion">← Volver a conceptos de programación</Link>
       </section>
     </Layout>
   );
