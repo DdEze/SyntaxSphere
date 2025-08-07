@@ -7,7 +7,7 @@ import '../../../styles/global.css';
 export default function CSSPage() {
   return (
     <Layout>
-      <h1>CSS</h1>
+      <h1>CSS (Cascading Style Sheets)</h1>
 
       <section>
         <h2>¿Cómo se aplica CSS?</h2>
@@ -25,9 +25,9 @@ export default function CSSPage() {
 
 <!-- Interno -->
 <head>
-<style>
-    p { color: red; }
-</style>
+    <style>
+        p { color: red; }
+    </style>
 </head>
 
 <!-- Externo -->

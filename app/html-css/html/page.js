@@ -7,7 +7,7 @@ import '../../../styles/global.css'
 export default function HtmlPage() {
   return (
     <Layout>
-      <h1>HTML</h1>
+      <h1>HTML (HyperText Markup Language)</h1>
       <nav>
         <h2>Contenido</h2>
         <ul>
