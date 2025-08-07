@@ -7,34 +7,37 @@ import '../../../styles/global.css'
 export default function HtmlPage() {
   return (
     <Layout>
-      <h1>Estructura Básica de un Documento HTML</h1>
-      
-      <pre>
-        {`<!DOCTYPE html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <title>Mi primera página</title>
-            </head>
-            <body>
-                <h1>Hola Mundo</h1>
-                <p>Este es un párrafo.</p>
-            </body>
-            </html>`}
-      </pre>
+      <h1>HTML</h1>
+      <nav>
+        <h2>Contenido</h2>
+        <ul>
+          <li><a href="#estructura">Etiquetas Básicas</a></li>
+          <li><a href="#basicas">Etiquetas Básicas</a></li>
+          <li><a href="#contenido">Etiquetas de Contenido</a></li>
+          <li><a href="#enlaces">Enlaces e Imágenes</a></li>
+          <li><a href="#listas">Lista</a></li>
+          <li><a href="#tablas">Tablas</a></li>
+          <li><a href="#formularios">Formularios</a></li>
+          <li><a href="#otras">Otras Etiquetas</a></li>
+        </ul>
+      </nav>
 
-        <nav>
-            <h2>Contenido</h2>
-            <ul >
-                <li><a href="#basicas">Etiquetas Básicas</a></li>
-                <li><a href="#contenido">Etiquetas de Contenido</a></li>
-                <li><a href="#enlaces">Enlaces e Imágenes</a></li>
-                <li><a href="#listas">Lista</a></li>
-                <li><a href="#tablas">Tablas</a></li>
-                <li><a href="#formularios">Formularios</a></li>
-                <li><a href="#otras">Otras Etiquetas</a></li>
-            </ul>
-        </nav>
+      <h2 id="estructura">Estructura Básica de un Documento HTML</h2>
+      <pre>
+        {`
+        <!DOCTYPE html>
+        <html>
+          <head>
+              <meta charset="UTF-8">
+              <title>Mi primera página</title>
+          </head>
+          <body>
+              <h1>Hola Mundo</h1>
+              <p>Este es un párrafo.</p>
+          </body>
+        </html>
+          `}
+      </pre>
 
       <h2 id="basicas">Etiquetas Básicas de Estructura</h2>
       <ul>

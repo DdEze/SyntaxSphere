@@ -17,9 +17,9 @@ export default function ProgramacionPage() {
   return (
     <Layout>
       <h1>Conceptos de Programación</h1>
-      <ul>
+      <ul className='mi-lista'>
         {subcategorias.map(({ slug, titulo }) => (
-          <li key={slug}>
+          <li key={slug} className='item-lista'>
             <Link href={`/programacion/${slug}`}>
               {titulo}
             </Link>

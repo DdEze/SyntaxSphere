@@ -135,7 +135,7 @@ footer p:not(:last-child) {
   margin-bottom: 0.5rem;
 }
 
-.mi-lista li{
+.mi-lista {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
@@ -143,7 +143,7 @@ footer p:not(:last-child) {
   padding: 0;
 }
 
-.item-lista  ul li {
+.item-lista {
   background-color: #252526;
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -152,12 +152,12 @@ footer p:not(:last-child) {
   transition: background-color 0.3s, transform 0.2s;
 }
 
-.item-lista  ul li:hover {
+.item-lista:hover {
   background-color: #2f2f2f;
   transform: translateY(-3px);
 }
 
-.item-lista ul li a {
+.item-lista a {
   color: var(--text-color);
   text-decoration: none;
   font-weight: 600;
@@ -165,7 +165,7 @@ footer p:not(:last-child) {
   display: block;
 }
 
-.item-lista  ul li a:hover {
+.item-lista a:hover {
   color: var(--primary-color);
 }
 

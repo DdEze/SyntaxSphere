@@ -19,9 +19,9 @@ export default async function TerminoPage({ params }) {
       {termino.relacionados && termino.relacionados.length > 0 && (
         <>
           <h2>Términos relacionados</h2>
-          <ul>
+          <ul className='mi-lista'>
             {termino.relacionados.map((rel) => (
-              <li key={rel}>
+              <li key={rel} className='item-lista'>
                 <Link href={`/terminos/${rel}`}>
                   {terminos[rel]?.titulo || rel}
                 </Link>

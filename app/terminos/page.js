@@ -37,9 +37,9 @@ export default function TerminosPage() {
   return (
     <Layout>
       <h1>Glosario de Términos Informáticos</h1>
-      <ul>
+      <ul className="mi-lista">
         {terminos.map((termino) => (
-          <li key={termino}>
+          <li key={termino} className="item-lista">
             <Link
               href={`/terminos/${encodeURIComponent(termino.toLowerCase())}`}
             >
