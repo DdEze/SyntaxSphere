@@ -7,31 +7,40 @@ import '../../../styles/global.css';
 export default function EstructuraControlPage() {
   return (
     <Layout>
-      <h1>Estructura de Control</h1>
-      <p>Las estructuras de control permiten modificar el flujo de ejecución de un programa, según condiciones o repeticiones.</p>
+      <section>
+        <h1>Estructura de Control</h1>
+        <p>Las estructuras de control permiten modificar el flujo de ejecución de un programa, según condiciones o repeticiones.</p>
+      </section>
 
-      <h2>Condicionales</h2>
-      <p>Permiten ejecutar bloques de código dependiendo del cumplimiento de ciertas condiciones.</p>
-      <pre>
-        <code>
-          {`
-let edad = 18;
+      <section>
+          <h2 >Índice </h2>
+          <nav>
+            <ul className='indice'>
+                <li><a href="#condicionales">Condicionales</a></li>
+                <li><a href="#bucles">Bucles</a></li>
+            </ul>
+          </nav>
+      </section>
+
+      <section id='condicionales'>
+        <h2>Condicionales</h2>
+        <p>Permiten ejecutar bloques de código dependiendo del cumplimiento de ciertas condiciones.</p>
+        <h3>IF & ELSE</h3>
+        <pre><code>
+{`let edad = 18;
 
 if (edad >= 18) {
   console.log("Eres mayor de edad");
 } else {
   console.log("Eres menor de edad");
-}
-          `}
-        </code>
-      </pre>
+}`}
+        </code></pre>
 
-      <h2>Switch</h2>
-      <p>Útil para comparar una variable contra múltiples valores posibles.</p>
-      <pre>
-        <code>
-          {`
-let dia = "lunes";
+
+        <h3>Switch</h3>
+        <p>Útil para comparar una variable contra múltiples valores posibles.</p>
+        <pre><code>
+{`let dia = "lunes";
 
 switch (dia) {
   case "lunes":
@@ -42,67 +51,53 @@ switch (dia) {
     break;
   default:
     console.log("Día común");
-}
-          `}
-        </code>
-      </pre>
+}`}
+        </code></pre>
+      </section>
 
-      <h2>Bucles</h2>
-      <p>Permiten repetir acciones mientras se cumplan ciertas condiciones.</p>
-
-      <h3>For</h3>
-      <pre>
-        <code>
-          {`
-for (let i = 0; i < 5; i++) {
+      <section id='bucles'>
+        <h2>Bucles</h2>
+        <p>Permiten repetir acciones mientras se cumplan ciertas condiciones.</p>
+        <h3>For</h3>
+        <pre><code>
+{`for (let i = 0; i < 5; i++) {
   console.log("Iteración " + i);
-}
-          `}
-        </code>
-      </pre>
+}`}
+        </code></pre>
 
-      <h3>While</h3>
-      <pre>
-        <code>
-          {`
-let i = 0;
+        <h3>While</h3>
+        <pre><code>
+{`let i = 0;
 while (i < 5) {
   console.log("Iteración " + i);
   i++;
-}
-          `}
-        </code>
-      </pre>
+} `}
+        </code></pre>
 
-      <h3>Do...While</h3>
-      <pre>
-        <code>
-          {`
-let i = 0;
+        <h3>Do...While</h3>
+        <pre><code>
+{`let i = 0;
 do {
   console.log("Iteración " + i);
   i++;
-} while (i < 5);
-           `}
-        </code>
-      </pre>
+} while (i < 5);`}
+        </code></pre>
+      </section>
 
-      <h2>Control de Flujo</h2>
-      <p>Instrucciones como <code>break</code> o <code>continue</code> permiten alterar el comportamiento de los bucles.</p>
-
-      <pre>
-        <code>
-          {`
-for (let i = 0; i < 5; i++) {
+      <section>  
+        <h2>Control de Flujo</h2>
+        <p>Instrucciones como <code>break</code> o <code>continue</code> permiten alterar el comportamiento de los bucles.</p>
+        <pre><code>
+{`for (let i = 0; i < 5; i++) {
   if (i === 2) continue;
   if (i === 4) break;
   console.log(i);
-}
-          `}
-        </code>
-      </pre>
-
-      <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
+}`}
+        </code></pre>
+      </section>
+      <section>
+        <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
+      </section>
     </Layout>
   );
 }

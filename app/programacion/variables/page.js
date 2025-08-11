@@ -7,18 +7,20 @@ import '../../../styles/global.css';
 export default function VariablesPage() {
   return (
     <Layout>
-      <h1>Variables y Tipos de Datos</h1>
-      <p>En este apartado vamos a introducir dos conceptos fundamentales en programación: las variables y los tipos de datos.</p>
-      
+      <section>
+        <h1>Variables y Tipos de Datos</h1>
+        <p>En este apartado vamos a introducir dos conceptos fundamentales en programación: las variables y los tipos de datos.</p>
+      </section>
+
       <section>
         <h2>¿Qué es una variable?</h2>
         <p>
           Una variable es un contenedor que permite almacenar datos que pueden cambiar durante la ejecución de un programa. Por ejemplo, en JavaScript:
         </p>
-        <pre>
+        <pre><code>
 {`let edad = 25;
-const nombre = "Juan";`}
-        </pre>
+ const nombre = "Juan";`}
+        </code></pre>
         <p>
           En este ejemplo, <code>edad</code> es una variable cuyo valor puede cambiar, mientras que <code>nombre</code> es constante.
         </p>
@@ -38,17 +40,20 @@ const nombre = "Juan";`}
 
       <section>
         <h2>Ejemplo práctico</h2>
-        <pre>
+        <pre><code>
 {`let nombre = "María";
-let edad = 28;
+ let edad = 28;
 
-console.log("Nombre:", nombre);
-console.log("Edad:", edad);`}
-        </pre>
+ console.log("Nombre:", nombre);
+ console.log("Edad:", edad);`}
+        </code></pre>
         <p>Este código crea dos variables y las imprime por consola.</p>
       </section>
+      
+      <section>
+        <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
+      </section>
 
-      <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
     </Layout>
   );
 }

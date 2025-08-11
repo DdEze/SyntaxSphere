@@ -8,8 +8,8 @@ export default function HtmlPage() {
   return (
     <Layout>
       <h1>HTML (HyperText Markup Language)</h1>
+      <h2>Índice</h2>
       <nav>
-        <h2>Contenido</h2>
         <ul className='indice'>
           <li><a href="#estructura">Etiquetas Básicas</a></li>
           <li><a href="#basicas">Etiquetas Básicas</a></li>

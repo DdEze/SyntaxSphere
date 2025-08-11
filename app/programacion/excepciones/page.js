@@ -9,14 +9,18 @@ export default function ExcepcionesPage() {
     <Layout>
       <section>
         <h1>Excepciones en Programación</h1>
+      </section>
 
+      <section>
         <h2>¿Qué es una Excepción?</h2>
         <p>
           Una <strong>excepción</strong> es un mecanismo que permite a un programa manejar errores o condiciones
           inusuales que ocurren durante la ejecución. En lugar de finalizar abruptamente, el flujo del programa puede
           ser redirigido a una rutina que se encarga de gestionar el problema.
         </p>
+      </section>
 
+      <section>
         <h2>¿Cómo se usa?</h2>
         <p>
           La mayoría de los lenguajes modernos (como Java, Python, JavaScript o C++) implementan el manejo de
@@ -24,18 +28,18 @@ export default function ExcepcionesPage() {
           opcionalmente <code>finally</code>.
         </p>
 
-        <pre>
-            {`
-try {
+        <pre><code>
+{`try {
   // Código que puede lanzar una excepción
 }catch (error) {
   // Manejo de la excepción
 }finally {
   // Código que se ejecuta siempre, ocurra o no la excepción
-}
-            `}
-        </pre>
+}`}
+        </code></pre>
+      </section>
 
+      <section>
         <h2>Modelos de Ejecución</h2>
         <p>Existen principalmente dos modelos para el manejo de excepciones:</p>
 
@@ -57,15 +61,21 @@ try {
         <p>
           Este modelo asume que el flujo de ejecución no puede continuar normalmente después de un error.
         </p>
+      </section>
 
+      <section>
         <h2>Conclusión</h2>
         <p>
           Las excepciones son herramientas fundamentales para construir aplicaciones robustas, permitiendo que los
           programas manejen fallos de manera controlada y segura. Elegir el modelo adecuado depende del lenguaje y del
           tipo de problema que se esté resolviendo.
         </p>
+      </section>
+
+      <section>
         <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
       </section>
+
     </Layout>
   );
 }

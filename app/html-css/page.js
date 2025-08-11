@@ -6,10 +6,12 @@ import Layout from '@/components/Layout';
 export default function HtmlCssPage() {
   return (
     <Layout>
-      <h1>HTML y CSS</h1>
-      <p>
-        HTML y CSS son tecnologías fundamentales para el desarrollo web. Juntas permiten estructurar y dar estilo a las páginas que vemos en Internet.
-      </p>
+      <section>
+        <h1>HTML y CSS</h1>
+        <p>
+          HTML y CSS son tecnologías fundamentales para el desarrollo web. Juntas permiten estructurar y dar estilo a las páginas que vemos en Internet.
+        </p>
+      </section>
 
       <section>
         <h2>¿Qué es HTML?</h2>

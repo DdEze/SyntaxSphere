@@ -7,7 +7,10 @@ import '../../../styles/global.css';
 export default function CSSPage() {
   return (
     <Layout>
-      <h1>CSS (Cascading Style Sheets)</h1>
+
+      <section>
+        <h1>CSS (Cascading Style Sheets)</h1>
+      </section>
 
       <section>
         <h2 >Índice </h2>
@@ -20,18 +23,15 @@ export default function CSSPage() {
         </ul>
       </section>
 
-      <section>
-        <h2 id='aplicacion'>¿Cómo se aplica CSS?</h2>
+      <section id='aplicacion'>
+        <h2>¿Cómo se aplica CSS?</h2>
         <ul>
           <li><strong>En línea:</strong> dentro de la etiqueta HTML con el atributo <code>style</code>.</li>
           <li><strong>Interno:</strong> dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> del documento HTML.</li>
           <li><strong>Externo:</strong> en un archivo separado con extensión <code>.css</code> enlazado con <code>&lt;link&gt;</code>.</li>
         </ul>
-
-        <pre>
-          <code>
-                {`
-<!-- En línea -->
+        <pre><code>
+{`<!-- En línea -->
 <p style="color: blue;">Texto en azul</p>
 
 <!-- Interno -->
@@ -42,49 +42,36 @@ export default function CSSPage() {
 </head>
 
 <!-- Externo -->
-<link rel="stylesheet" href="styles.css">
-`}
-            </code>
-        </pre>
+<link rel="stylesheet" href="styles.css">`}
+          </code></pre>
       </section>
 
-      <section>
-        <h2 id='sintaxis'>Sintaxis de CSS</h2>
+      <section id='sintaxis'>
+        <h2>Sintaxis de CSS</h2>
         <p>La estructura básica de una regla CSS es:</p>
-        <pre>
-          <code>
-            {`
-selector {
+        <pre><code>
+{`selector {
     propiedad: valor;
-}
-            `}
-          </code>
-        </pre>
+}`}
+        </code></pre>
         <p>Ejemplo:</p>
-        <pre>
-          <code>
-            {`
-h1 {
+        <pre><code>
+{`h1 {
     color: green;
     font-size: 24px;
-}
-            `}
-          </code>
-        </pre>
+}`}
+        </code></pre>
       </section>
 
-      <section>
-        <h2 id='selectores'>Selectores Básicos</h2>
+      <section id='selectores'>
+        <h2>Selectores Básicos</h2>
         <ul>
           <li><code>elemento</code> – Aplica a todas las etiquetas con ese nombre. Ej: <code>p</code>, <code>h1</code></li>
           <li><code>.clase</code> – Aplica a los elementos que tengan esa clase.</li>
           <li><code>#id</code> – Aplica al elemento con ese identificador.</li>
         </ul>
-
-        <pre>
-          <code>
-            {`
-p {
+        <pre><code>
+{`p {
     color: gray;
 }
 
@@ -94,10 +81,8 @@ p {
 
 #titulo {
     text-transform: uppercase;
-}
-            `}
-         </code>
-        </pre>
+}`}
+        </code></pre>
       </section>
 
       <section>
@@ -132,22 +117,27 @@ p {
             <ul>
                 <li>
                     <Link href="/html-css/css/propiedades">
-                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Propiedades CSS</p>
+                        Ir a Propiedades CSS
                     </Link>
                 </li>
                 <li>
-                    <Link href="/html-css/css/unidades">
-                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Unidades de Medida</p>
+                    <Link href="/html-css/css/unidades" style={{ color: 'var(--highlight-color)'}}>
+                        Ir a Unidades de Medida
                     </Link>
                 </li>
                 <li>
-                    <Link href="/html-css/css/display-posicionamiento">
-                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Display y Posicionamiento</p>
+                    <Link href="/html-css/css/display-posicionamiento" style={{ color: 'var(--highlight-color)'}}>
+                        Ir a Display y Posicionamiento
                     </Link>
                 </li>
                 <li>
                     <Link href="/html-css/css/flexbox-grid" style={{ color: 'var(--highlight-color)'}}>
-                        👉 Ir a Flexbox y Grid
+                        Ir a Flexbox y Grid
+                    </Link>
+                </li>
+                <li>
+                    <Link href="/html-css/html" style={{ color: 'var(--highlight-color)'}}>
+                        Ir a HTML
                     </Link>
                 </li>
             </ul>
