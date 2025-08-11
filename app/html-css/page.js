@@ -20,7 +20,7 @@ export default function HtmlCssPage() {
           Cada elemento HTML se representa mediante etiquetas, que indican al navegador cómo debe mostrarse cada parte del contenido.
         </p>
         <Link href="/html-css/html">
-          <strong>→ Ver más sobre HTML</strong>
+          <strong style={{ color: 'var(--highlight-color)'}}>→ Ver más sobre HTML</strong>
         </Link>
       </section>
 
@@ -33,7 +33,7 @@ export default function HtmlCssPage() {
           CSS trabaja en conjunto con HTML para mejorar la experiencia visual del usuario sin modificar la estructura del contenido.
         </p>
         <Link href="/html-css/css">
-          <strong>→ Ver más sobre CSS</strong>
+          <strong style={{ color: 'var(--highlight-color)'}}>→ Ver más sobre CSS</strong>
         </Link>
       </section>
     </Layout>

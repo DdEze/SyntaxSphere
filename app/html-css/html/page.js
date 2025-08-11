@@ -10,7 +10,7 @@ export default function HtmlPage() {
       <h1>HTML (HyperText Markup Language)</h1>
       <nav>
         <h2>Contenido</h2>
-        <ul>
+        <ul className='indice'>
           <li><a href="#estructura">Etiquetas Básicas</a></li>
           <li><a href="#basicas">Etiquetas Básicas</a></li>
           <li><a href="#contenido">Etiquetas de Contenido</a></li>
@@ -100,8 +100,8 @@ export default function HtmlPage() {
 
       <p>En las siguientes secciones, veremos en más detalle cómo se usan estas etiquetas en conjunto y cómo se combinan con CSS para diseñar páginas web.</p>
 
-      <Link href="/html-css/css">
-        <p style={{ color: 'blue', textDecoration: 'underline' }}>Ir a la sección de CSS</p>
+      <Link href="/html-css/css" style={{ color: 'var(--highlight-color)'}}>
+          Ir a la sección de CSS
       </Link>
     </Layout>
   );

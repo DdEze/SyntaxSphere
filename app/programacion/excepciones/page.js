@@ -64,7 +64,7 @@ try {
           programas manejen fallos de manera controlada y segura. Elegir el modelo adecuado depende del lenguaje y del
           tipo de problema que se esté resolviendo.
         </p>
-        <Link href="/programacion">← Volver a conceptos de programación</Link>
+        <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
       </section>
     </Layout>
   );

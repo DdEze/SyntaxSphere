@@ -121,21 +121,21 @@ p {
             <ul>
                 <li>
                     <Link href="/html-css/css/propiedades">
-                        👉 Ir a Propiedades CSS
+                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Propiedades CSS</p>
                     </Link>
                 </li>
                 <li>
                     <Link href="/html-css/css/unidades">
-                        👉 Ir a Unidades de Medida
+                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Unidades de Medida</p>
                     </Link>
                 </li>
                 <li>
                     <Link href="/html-css/css/display-posicionamiento">
-                        👉 Ir a Display y Posicionamiento
+                        <p style={{ color: 'var(--highlight-color)'}}>👉 Ir a Display y Posicionamiento</p>
                     </Link>
                 </li>
                 <li>
-                    <Link href="/html-css/css/flexbox-grid">
+                    <Link href="/html-css/css/flexbox-grid" style={{ color: 'var(--highlight-color)'}}>
                         👉 Ir a Flexbox y Grid
                     </Link>
                 </li>

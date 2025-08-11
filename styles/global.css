@@ -110,6 +110,11 @@ p {
   font-size: 1.1rem;
 }
 
+.indice li,
+.indice a {
+  color: color-mix(in srgb, var(--highlight-color), white 20%);
+}
+
 footer {
   background-color: var(--footer-bg);
   color: var(--text-color);

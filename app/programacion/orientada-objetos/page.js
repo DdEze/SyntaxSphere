@@ -96,7 +96,7 @@ cat.hablar(); // Miau!
         <img src="https://imgs.search.brave.com/zUk_Im5HUU7SNoyl9X1d-v7-CcegxtfCrLAVcXtlYTs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jbXMu/Ym9hcmRtaXguY29t/L2ltYWdlcy9lcy9h/cnRpY2xlcy9rbm93/bGVkZ2UvZGlhZ3Jh/bWEtZGUtY2xhc2Vz/LXVtbC5wbmc" alt="Ejemplo de diagrama UML de clases" style={{ maxWidth: '100%', margin: '1rem 0' }} />
       </div>
 
-      <Link href="/programacion">← Volver a conceptos de programación</Link>
+      <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
     </Layout>
   );
 }

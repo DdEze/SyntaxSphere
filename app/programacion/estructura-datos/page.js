@@ -119,7 +119,7 @@ let raiz = new Nodo(10);`}
         </code>
       </pre>
 
-      <Link href="/programacion">← Volver a conceptos de programación</Link>
+      <Link href="/programacion" style={{ color: 'var(--highlight-color)'}}>← Volver a conceptos de programación</Link>
     </Layout>
   );
 }
