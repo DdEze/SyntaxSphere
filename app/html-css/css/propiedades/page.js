@@ -117,9 +117,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
-}
-
-                `}</code></pre>
+}`}
+                </code></pre>
 
             </section>
             <section>
