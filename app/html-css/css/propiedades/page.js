@@ -122,11 +122,16 @@ header {
                 `}</code></pre>
 
             </section>
-
             <section>
-                <Link href="/html-css/css" style={{ color: 'var(--highlight-color)'}}>
-                    Ir a la sección de CSS
-                </Link>
+                <nav style={{ marginTop: '2rem' }}>
+                    <p>Explora más:</p>
+                    <ul>
+                        <li><Link href="/html-css/css" style={{ color: 'var(--highlight-color)'}}>Conceptos CSS</Link></li>
+                        <li><Link href="/html-css/css/unidades" style={{ color: 'var(--highlight-color)'}}>Unidades de Medida</Link></li>
+                        <li><Link href="/html-css/css/display-posicionamiento" style={{ color: 'var(--highlight-color)'}}>Display y Posicionamiento</Link></li>
+                        <li><Link href="/html-css/css/flexbox-grid" style={{ color: 'var(--highlight-color)'}}>Flexbox y Grid</Link></li>
+                    </ul>
+                </nav>
             </section>
         </Layout>
     )

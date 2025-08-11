@@ -20,6 +20,7 @@ export default function CSSPage() {
             <li><a href="#selectores">Selectores Básicos</a></li>
             <li><a href="#comentarios">Comentarios en CSS</a></li>
             <li><a href="#modelo">Modelo de Caja (Box Model)</a></li>
+            <li><a href="#mas">Más sobre CSS</a></li>
         </ul>
       </section>
 
@@ -112,11 +113,13 @@ export default function CSSPage() {
         <p>
           A continuación exploraremos cada una de las propiedades clave del modelo de caja, así como unidades de medida, sistemas de posicionamiento y técnicas modernas como <strong>Flexbox</strong> y <strong>Grid</strong>.
         </p>
-
+      </section>
+      <section id='mas'>
         <div>
+            <p>Explora más:</p>
             <ul>
                 <li>
-                    <Link href="/html-css/css/propiedades">
+                    <Link href="/html-css/css/propiedades" style={{ color: 'var(--highlight-color)'}}>
                         Ir a Propiedades CSS
                     </Link>
                 </li>
