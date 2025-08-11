@@ -13,8 +13,8 @@ export default function CSSPropPage() {
             </section>
 
             <section>
-                <h2>Índice </h2>
-                <ul>
+                <h2 >Índice </h2>
+                <ul className='indice'>
                     <li><a href="#texto">Propiedades de texto</a></li>
                     <li><a href="#fondo">Propiedades de fondo</a></li>
                     <li><a href="#borde">Propiedades de borde</a></li>

@@ -10,7 +10,18 @@ export default function CSSPage() {
       <h1>CSS (Cascading Style Sheets)</h1>
 
       <section>
-        <h2>¿Cómo se aplica CSS?</h2>
+        <h2 >Índice </h2>
+        <ul className='indice'>
+            <li><a href="#aplicacion">¿Cómo se aplica CSS?</a></li>
+            <li><a href="#sintaxis">Sintaxis de CSS</a></li>
+            <li><a href="#selectores">Selectores Básicos</a></li>
+            <li><a href="#comentarios">Comentarios en CSS</a></li>
+            <li><a href="#modelo">Modelo de Caja (Box Model)</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id='aplicacion'>¿Cómo se aplica CSS?</h2>
         <ul>
           <li><strong>En línea:</strong> dentro de la etiqueta HTML con el atributo <code>style</code>.</li>
           <li><strong>Interno:</strong> dentro de una etiqueta <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code> del documento HTML.</li>
@@ -38,7 +49,7 @@ export default function CSSPage() {
       </section>
 
       <section>
-        <h2>Sintaxis de CSS</h2>
+        <h2 id='sintaxis'>Sintaxis de CSS</h2>
         <p>La estructura básica de una regla CSS es:</p>
         <pre>
           <code>
@@ -63,7 +74,7 @@ h1 {
       </section>
 
       <section>
-        <h2>Selectores Básicos</h2>
+        <h2 id='selectores'>Selectores Básicos</h2>
         <ul>
           <li><code>elemento</code> – Aplica a todas las etiquetas con ese nombre. Ej: <code>p</code>, <code>h1</code></li>
           <li><code>.clase</code> – Aplica a los elementos que tengan esa clase.</li>
@@ -90,7 +101,7 @@ p {
       </section>
 
       <section>
-        <h2>Comentarios en CSS</h2>
+        <h2 id='comentarios'>Comentarios en CSS</h2>
         <p>Se usan para documentar el código:</p>
         <pre>
           <code>{`/* Esto es un comentario en CSS */`}</code>
@@ -98,7 +109,7 @@ p {
       </section>
 
       <section>
-        <h2>Modelo de Caja (Box Model)</h2>
+        <h2 id='modelo'>Modelo de Caja (Box Model)</h2>
         <p>
           El modelo de caja es uno de los conceptos fundamentales en CSS. Cada elemento HTML se representa como una caja rectangular que contiene varias partes:
         </p>
