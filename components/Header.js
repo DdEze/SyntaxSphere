@@ -14,7 +14,7 @@ export default function Header() {
         <Link href="/bases-de-datos">Bases de Datos</Link>
         <Link href="/patrones">Patrones</Link>
         <Link href="/html-css">HTML & CSS</Link>
-        <Link href="/control-versiones">Control de versiones</Link>
+        <Link href="/git">Git</Link>
         <Link href="/busqueda">Buscar</Link>
         <Link href="/sobre">Sobre</Link>
       </nav>
