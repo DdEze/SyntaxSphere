@@ -11,7 +11,7 @@ export default function Header() {
         <Link href="/programacion">Programación</Link>
         <Link href="/lenguajes">Lenguajes</Link>
         <Link href="/frameworks">Frameworks</Link>
-        <Link href="/bases-de-datos">Bases de Datos</Link>
+        <Link href="/bases-datos">Bases de Datos</Link>
         <Link href="/patrones">Patrones</Link>
         <Link href="/html-css">HTML & CSS</Link>
         <Link href="/git">Git</Link>
