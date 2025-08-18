@@ -7,7 +7,7 @@ import '@/styles/global.css';
 export default function NoSQLPage() {
   return (
     <Layout>
-      <section className="prose lg:prose-xl max-w-4xl mx-auto px-4 py-8">
+      <section>
         <h1>Bases de Datos NoSQL</h1>
       </section>
 
@@ -28,39 +28,6 @@ export default function NoSQLPage() {
           <li><strong>Columnas:</strong> Optimizadas para lectura y escritura de grandes volúmenes (Ej: Cassandra, HBase).</li>
           <li><strong>Grafos:</strong> Modelan datos como nodos y relaciones (Ej: Neo4j, ArangoDB).</li>
         </ul>
-      </section>
-
-      <section>
-        <h2> Bases de Datos orientadas a <strong>Documentos</strong></h2>
-        <p>
-          Almacenan datos en documentos similares a JSON o BSON. Cada documento puede tener una estructura diferente, lo que permite flexibilidad en los esquemas.
-        </p>
-        <ul>
-          <li>No maneja la noción de esquemas.</li>
-          <li>Carece de lenguaje DDL.</li>
-          <li>El formato de almacenamiento es BSON (Binary JSNO).</li>
-          <li>BSON guarda tamaños de campo para mayor velocidad de lectura.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Ejemplos con MongoDB</h2>
-        <pre><code>
-{`// Insertar un documento
-db.usuarios.insertOne({ nombre: "Juan", edad: 25, ciudad: "Buenos Aires" });
-
-// Buscar todos los documentos
-db.usuarios.find();
-
-// Buscar con filtro
-db.usuarios.find({ edad: { $gt: 18 } });
-
-// Actualizar documentos
-db.usuarios.updateOne({ nombre: "Juan" }, { $set: { ciudad: "Córdoba" } });
-
-// Eliminar documentos
-db.usuarios.deleteOne({ nombre: "Juan" });`}
-        </code></pre>
       </section>
 
       <section>
@@ -90,6 +57,55 @@ db.usuarios.deleteOne({ nombre: "Juan" });`}
           <li>Plataformas de redes sociales.</li>
           <li>Catálogos de productos con estructuras cambiantes.</li>
         </ul>
+      </section>
+
+      <section>
+        <h2>Bases de Datos orientadas a <strong>Documentos</strong></h2>
+        <p>
+          Almacenan datos en documentos similares a JSON o BSON. Cada documento puede tener una estructura diferente, lo que permite flexibilidad en los esquemas.
+        </p>
+        <ul>
+          <li>No maneja la noción de esquemas.</li>
+          <li>Carece de lenguaje DDL.</li>
+          <li>El formato de almacenamiento es BSON (Binary JSNO).</li>
+          <li>BSON guarda tamaños de campo para mayor velocidad de lectura.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Bases de Datos orientadas a <strong>Familia de Columnas</strong></h2>
+        <p>
+          Almacenan datos en columnas en lugar de filas. Esto permite una alta compresión y un rendimiento eficiente
+          en consultas analítica y operaciones de lectura sobre grandes volúmenes de datos.
+        </p>
+        <p>Ejemplos: Apache Cassandra, HBase, ScyllaDB</p>
+        <p>Uso comunes: Análisis de grandes datos, aplicaciones de gestión de grandes volúmenes de datos
+          distribuidos, y sistemas que requieran alta disponibilidad.
+        </p>
+      </section>
+
+      <section>
+        <h2>Bases de Datos orientadas a <strong>Clave-Valor</strong></h2>
+        <p>
+          Almacenan datos como pares clave-valor. Cada valor está asociado a una clave única
+          y el valor puede ser cualquier tipo de datos.
+        </p>
+        <p>Ejemplos: Redis, DynamoDB, Riak</p>
+        <p>Usos comunes: Cáches, sesiones de usuario y aplicaciones que requieran operaciones
+          rápidas de lectura y escritura.
+        </p>
+      </section>
+        <h2>Bases de Datos orientadas a <strong>Grafo</strong></h2>
+        <p>
+          Están diseñadas para almacenar y consultar relaciones entre datos de manera eficiente. Utilizan
+           nodos, aristas y propiedades para representar y navegar la conexiones entre datos. Suelen necesitar
+           arquitectura monolítica, a diferencia del resto del mundo NoSQL. Resulven otro problema de los
+           RDBMS, así que son diferentes de las otras NoSQL Inserts caros - Queries baratas.
+        </p>
+        <p>Ejemplos: Neo4j, Amazon Neptune, ArangoDB.</p>
+        <p>Usos comunes: Redes de presonas, Redes de conocimiento, Web Semántica</p>
+      <section>
+
       </section>
 
       <section id='explora'>
