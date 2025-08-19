@@ -20,7 +20,24 @@ export default function NoSQLPage() {
         </p>
       </section>
 
-      <section>
+            <section>
+        <h2>Indice</h2>
+          <nav>
+            <ul className='indice'>
+                <li><a href="#tipos">Tipos de Bases de Datos NoSQL</a></li>
+                <li><a href="#ventajas">Ventajas</a></li>
+                <li><a href="#desventajas">Desventajas</a></li>
+                <li><a href="#casos">Casos de uso</a></li>
+                <li><a href="#documentos">Bases de Datos orientadas a <strong>Documentos</strong></a></li>
+                <li><a href='#familia'>Bases de Datos orientadas a <strong>Familia de Columnas</strong></a></li>
+                <li><a href='#clave'>Bases de Datos orientadas a <strong>Clave-Valor</strong></a></li>
+                <li><a href='#grafo'>Bases de Datos orientadas a <strong>Grafo</strong></a></li>
+                <li><a href='#explora'>Explora más:</a></li>       
+            </ul>
+          </nav>
+      </section>
+
+      <section id='tipos'>
         <h2>Tipos de Bases de Datos NoSQL</h2>
         <ul>
           <li><strong>Clave-Valor:</strong> Almacenan datos como pares clave-valor (Ej: Redis, DynamoDB).</li>
@@ -30,7 +47,7 @@ export default function NoSQLPage() {
         </ul>
       </section>
 
-      <section>
+      <section id='ventajas'>
         <h2>Ventajas</h2>
         <ul>
           <li>Alta escalabilidad horizontal.</li>
@@ -40,7 +57,7 @@ export default function NoSQLPage() {
         </ul>
       </section>
 
-      <section>
+      <section id='desventajas'>
         <h2>Desventajas</h2>
         <ul>
           <li>No siempre garantizan transacciones ACID completas.</li>
@@ -49,7 +66,7 @@ export default function NoSQLPage() {
         </ul>
       </section>
 
-      <section>
+      <section id='casos'>
         <h2>Casos de uso</h2>
         <ul>
           <li>Aplicaciones en tiempo real (chat, seguimiento de ubicación).</li>
@@ -59,7 +76,7 @@ export default function NoSQLPage() {
         </ul>
       </section>
 
-      <section>
+      <section id='documentos'>
         <h2>Bases de Datos orientadas a <strong>Documentos</strong></h2>
         <p>
           Almacenan datos en documentos similares a JSON o BSON. Cada documento puede tener una estructura diferente, lo que permite flexibilidad en los esquemas.
@@ -72,7 +89,7 @@ export default function NoSQLPage() {
         </ul>
       </section>
 
-      <section>
+      <section id='familia'>
         <h2>Bases de Datos orientadas a <strong>Familia de Columnas</strong></h2>
         <p>
           Almacenan datos en columnas en lugar de filas. Esto permite una alta compresión y un rendimiento eficiente
@@ -84,7 +101,7 @@ export default function NoSQLPage() {
         </p>
       </section>
 
-      <section>
+      <section id='clave'>
         <h2>Bases de Datos orientadas a <strong>Clave-Valor</strong></h2>
         <p>
           Almacenan datos como pares clave-valor. Cada valor está asociado a una clave única
@@ -95,6 +112,8 @@ export default function NoSQLPage() {
           rápidas de lectura y escritura.
         </p>
       </section>
+
+      <section id='grafo'>
         <h2>Bases de Datos orientadas a <strong>Grafo</strong></h2>
         <p>
           Están diseñadas para almacenar y consultar relaciones entre datos de manera eficiente. Utilizan
@@ -104,8 +123,6 @@ export default function NoSQLPage() {
         </p>
         <p>Ejemplos: Neo4j, Amazon Neptune, ArangoDB.</p>
         <p>Usos comunes: Redes de presonas, Redes de conocimiento, Web Semántica</p>
-      <section>
-
       </section>
 
       <section id='explora'>
